@@ -1,6 +1,7 @@
 (function(){
     angular.module('LunchChecker',[])
     .controller('lunchCheckerCtrl',lunchCheckerCtrl);
+    lunchCheckerCtrl.$inject = ['$scope'];
     function lunchCheckerCtrl($scope){
         $scope.dishesList='';
         $scope.message='';
