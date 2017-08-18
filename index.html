@@ -1,8 +1,16 @@
-<html>
+<html ng-app="nameCalculator">
     <head>
-        <title>Angularjs Coursera</title>
+        <title>Name Calculator</title>
+        <script src="angular.js"> </script>
+        <script src="app.js"> </script>
     </head>
     <body>
-        <h1>Hello Angularjs</h1>
+        <h1>Name Calculator</h1>
+        <div ng-controller="nameCalculatorController">
+            Your Name:
+            <input type="text" ng-model="name" ng-keyup="calculateValue();"></input>
+            Total Numeric Value of person's name is:{{value}}
+     
+        </div>   
     </body>
 </html>
