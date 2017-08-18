@@ -24,7 +24,8 @@
          </div>
          <div class="form-group message">
            <!-- Your message can go here. -->
-           {{message}}
+            <span ng-if="message=='Please enter data first'" style="color: red">{{message}}</span>
+             <span ng-if="message!=='Please enter data first'" style="color: green">{{message}}</span>
          </div>
    </div>
 
